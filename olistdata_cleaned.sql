@@ -17,3 +17,6 @@ JOIN products p			ON oi.product_id = p.product_id			-- joins order_items table w
 JOIN customers c		ON o_customer_id = c.customer_id			-- joins orders table with customers table and adds a new state column for where customer_id matches in both tables
 WHERE o.order_status = 'delivered';			-- filters the data to only include orders were successfully delivered
 
+
+-- the joins are essentialling attaching extra columns from another table where the IDs match
+
