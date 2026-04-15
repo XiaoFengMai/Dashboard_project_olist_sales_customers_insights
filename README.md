@@ -80,7 +80,7 @@ Phase 2 — Dashboard Building (Tableau or Power BI)
 
 - Connect to the raw Olist CSV files or database tables
 - Join and clean the data into a single flat analytical table
-- Export as `ecommerce_clean.csv` for use in Tableau/Power BI
+- Export as `olistdata_cleaned.csv` for use in Tableau/Power BI
 
 ### Phase 2: Dashboard
 
@@ -137,7 +137,7 @@ WHERE
 
 ### 4.3 Output
 
-The query produces a CSV file — `ecommerce_clean.csv` — with the following columns:
+The query produces a CSV file — `olistdata_cleaned.csv` — with the following columns:
 
 | Column | Type | Description |
 |---|---|---|
@@ -440,16 +440,16 @@ Or simply load all CSVs directly into Tableau/Power BI without a database (both 
 
 ### Step 2 — Run the SQL query
 
-Copy the master SQL query from [Section 4.2](#42-sql-query--master-analytical-table) into your SQL client. Execute it and export the results as `ecommerce_clean.csv`.
+Copy the master SQL query from [Section 4.2](#42-sql-query--master-analytical-table) into your SQL client. Execute it and export the results as `olistdata_cleaned.csv`.
 
 ### Step 3 — Connect to Tableau or Power BI
 
 **Tableau:**
-- File → Connect → Text File → select `ecommerce_clean.csv`
+- File → Connect → Text File → select `olistdata_cleaned.csv`
 - Confirm data types in the Data Source tab (ensure `order_date` is a Date, not a String)
 
 **Power BI:**
-- Get Data → Text/CSV → select `ecommerce_clean.csv`
+- Get Data → Text/CSV → select `olistdata_cleaned.csv`
 - In Power Query Editor, set `order_date` column type to Date
 - Click Close & Apply
 
@@ -496,7 +496,7 @@ olist-dashboard/
 │   │   └── product_category_name_translation.csv
 │   │
 │   └── processed/
-│       └── ecommerce_clean.csv       # Flat analytical table (SQL output)
+│       └── olistdata_cleaned.csv       # Flat analytical table (SQL output)
 │
 ├── sql/
 │   └── prepare_data.sql              # Master SQL query for data preparation
@@ -535,6 +535,5 @@ olist-dashboard/
 
 ---
 
----
 
 *Dataset credit: Olist, the largest department store in Brazilian marketplaces. Data made publicly available on Kaggle under the CC BY-NC-SA 4.0 licence.*
