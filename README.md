@@ -535,14 +535,6 @@ olist-dashboard/
 
 ---
 
-## 14. Author
-
-**Name:** [Your Name]  
-**Course / Programme:** [Your Course Name]  
-**Institution:** [Your Institution]  
-**Date:** April 2026  
-**Contact:** [Your Email or LinkedIn]
-
 ---
 
 *Dataset credit: Olist, the largest department store in Brazilian marketplaces. Data made publicly available on Kaggle under the CC BY-NC-SA 4.0 licence.*
