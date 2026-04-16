@@ -79,8 +79,9 @@ Phase 2 — Dashboard Building (Tableau or Power BI)
 ### Phase 1: SQL
 
 - Connect to the raw Olist CSV files or database tables
-- Join and clean the data into a single flat analytical table
-- Export as `olistdata_cleaned.csv` for use in Tableau/Power BI
+- write an SQL script that joins and clean the data into a single flat analytical table
+- Export as `olistdata_cleaned.csv` for use in Tableau/Power BI OR paste the SQL script directly into PowerBI
+
 
 ### Phase 2: Dashboard
 
@@ -103,6 +104,15 @@ Before building the dashboard, the following data quality steps were performed i
 3. **Parse timestamps** — Converted `order_purchase_timestamp` from string to proper `DATE` type
 4. **Translate category names** — Joined `product_category_name_translation` to replace Portuguese category names with English equivalents
 5. **Deduplicate** — Ensured no duplicate `order_id` entries in the final output
+6. To do this directly in PowerBI:
+7. Open PowerBI, get data from another source
+8. Select PostgresSQL database
+9. Fill out the following according to the image:
+10. <img width="702" height="559" alt="image" src="https://github.com/user-attachments/assets/53a4602f-cd0c-4acc-a183-d34903141d70" />
+11. next enter username: postgres and the pass set up during installation.
+12. click transform data to clean data types and others before loading the data (ex: change date order date to date only so the data loads properly in the chart)
+
+
 
 ### 4.2 SQL Query — Master Analytical Table
 
